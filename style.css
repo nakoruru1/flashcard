@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fffbea;
+    color: #222;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background: #f4c400;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #111;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #333;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+/* BARRA */
+.barra {
+    background: #ffe066;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tag-principal {
+    background: #f4c400;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #444;
+}
+
+/* CARDS */
+.container-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.cartao {
+    width: 300px;
+    height: 420px;
+    perspective: 1000px;
+}
+
+.cartao-interno {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cartao:hover .cartao-interno {
+    transform: rotateY(180deg);
+}
+
+.frente, .verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: #fff;
+}
+
+.verso {
+    transform: rotateY(180deg);
+}
+
+.cartao-imagem {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.conteudo {
+    padding: 15px;
+}
+
+.categoria {
+    font-size: 12px;
+    background: #ffe066;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.data {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-top: 10px;
+}
+
+/* SELOS */
+.selo {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.verdade {
+    background: #f4c400;
+    color: #111;
+}
+
+.fake {
+    background: #ff4d4d;
+    color: white;
+}
+
+/* RODAPÉ */
+footer {
+    background: #f4c400;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
